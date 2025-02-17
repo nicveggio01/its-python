@@ -6,7 +6,7 @@ for i in new_users:
         print("the username is already used, please choose another one!")
     
 else:
-    print("the username is available!)
+    print("the username is not available")
           
 current_users:list=["stefano", "lisa", "sara", "max", "giorgio"] 
 
