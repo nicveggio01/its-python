@@ -4,12 +4,12 @@ lancio_testa=0
 
 while lancio_moneta <= 8: 
     print(f"Lancio numero {lancio_moneta}")
-    risutato_lancio = input("inserire il risultato del lancio con T o C: ")
+    risutato_lancio = str(input("inserire il risultato del lancio con testa(\"t\" o\"T\") o croce (\"c\" o\"C\"): "))
     lancio_moneta += 1
     match risutato_lancio.lower():
-        case 't':
+        case "t"| "T":
             lancio_testa += 1
-        case 'c':
+        case "c"| "C":
             lancio_croce += 1
         case _:
             print("Error")
