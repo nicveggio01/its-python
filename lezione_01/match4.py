@@ -1,4 +1,4 @@
-voto: int(imput("Digite un voto di laurea (tra 66 e 100): "))
+voto: int(input("Digite un voto di laurea (tra 66 e 100): "))
 match voto:
     case  106 | 107 | 108 | 109 | 110:
         print("GPA 4.0")
