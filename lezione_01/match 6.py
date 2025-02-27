@@ -1,14 +1,19 @@
-animali= input("Inserisci il nome di un animale: ")
+animali:str=str(input("Inserisci il nome di un animale: "))
 
-match animali:
+mammiferi: list = ["cane", "gatto", "cavallo", "elefante", "leone", "leone"]
+rettili: list = ["serpente", "lucertola", "tartaruga", "coccodrillo"]
+uccelli:list=["aquila", "pappagallo", "gufo", "falco"]
+pesci:list=["squalo", "trota", "salmone", "carpa"]
 
-    case ["cane", "gatto", "cavallo", "elefante", "leone"]:
-        print("L'animale inserito è un mammifero")
-    case ["serpente", "lucertola", "tartaruga", "coccodrillo"]:
-        print("L'animale inserito è un rettile")
-    case ["aquila", "pappagallo", "gufo", "falco"]:
-        print("L'animale inserito è un uccello")
-    case ["squalo", "trota", "salmone", "carpa"]:
-        print("L'animale inserito è un pesce")
+match animali.lower():
+
+    case animal if animal in mammiferi:
+        print(f"{animal} è un mammifero")
+    case animal if animal in rettili:
+        print(f"{animal} è un rettile")
+    case animal if animal in uccelli:
+        print(f"{animal} è un uccello")
+    case animal if animal in pesci:
+        print(f"{animal} è un pesce")
     case _:
-        print("L'animale inserito non è presente nella lista") 
+        print(f"il programma non è in grado di classificare l'animale inserito ({animali}).")
