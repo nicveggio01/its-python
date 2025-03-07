@@ -1,2 +1,0 @@
-#test
-rint("Hello world")
