@@ -28,4 +28,4 @@ print(restaurant3.name)
 print(restaurant3.type)
 
 restaurant3.describe_restaurant()
-restaurant3.open_restaurant()
+restaurant3.open_restaurant( )
